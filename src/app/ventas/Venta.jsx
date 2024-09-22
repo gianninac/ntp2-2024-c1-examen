@@ -6,13 +6,13 @@ export default function Venta(props) {
   return (
     <li className="user-item">
       <div className="card user-item__content">
-        <div className="user-item__image avatar">
-          {/* <img src={props.Picture} alt={props.UserName} /> */}
-        </div>
+        {/* <div className="user-item__image avatar">
+          <img src={props.Picture} alt={props.UserName} />
+        </div> */}
         <div className="user-item__info">
-          <h2>{props.saleDate}</h2>
-          <h2>{props.storeLocation}</h2>
-          <h2>{props.purchaseMethod}</h2>
+          <h2>Sale Date: {props.saleDate}</h2>
+          <h2>Store Location: {props.storeLocation}</h2>
+          <h2>Purchase method: {props.purchaseMethod}</h2>
           <h3></h3>
         </div>
       </div>

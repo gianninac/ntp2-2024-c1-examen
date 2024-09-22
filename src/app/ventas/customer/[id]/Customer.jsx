@@ -18,6 +18,8 @@
 //     </li>
 //   );
 // }
+
+//Código con imágnes de customers
 "use client";
 import { useEffect, useState } from "react";
 
