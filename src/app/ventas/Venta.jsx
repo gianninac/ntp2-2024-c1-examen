@@ -13,12 +13,18 @@ export default function Venta(props) {
           <h2>Sale Date: {props.saleDate}</h2>
           <h2>Store Location: {props.storeLocation}</h2>
           <h2>Purchase method: {props.purchaseMethod}</h2>
-          <h3></h3>
         </div>
       </div>
       <div className="card venta-item__content ">
         <Link href={`/ventas/productos/${props._id}`}>Detalle productos</Link>
-        <Link href={`/ventas/customer/${props._id}`}>Detalle cliente</Link>
+
+        {/* //Modificación paginado */}
+        {/* <Link href={`/ventas/customer/${props._id}`}>Detalle cliente</Link> */}
+        <Link
+          href={`/ventas/customer/${props._id}?page=${props.numeroDePagina}`}
+        >
+          Detalle cliente
+        </Link>
       </div>
     </li>
   );
